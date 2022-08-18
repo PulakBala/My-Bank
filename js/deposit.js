@@ -4,14 +4,14 @@ document.getElementById('btn-deposit-field').addEventListener('click', function(
     //for input field use .value to the value inside the input field
     const inputValue = document.getElementById('deposit-input-value');
     const inputValueShow = inputValue.value;
-    const stringInputValueShow = parseInt(inputValueShow);
+    const stringInputValueShow = parseFloat(inputValueShow);
    
     // step 3: get the current depost money
     //for non-input (element other than input , textarea) use innerText to get the text
 
     const monyeDeposit = document.getElementById('money');
     const monyeDepositValue = monyeDeposit.innerText;
-    const stringMoneyDepositValue = parseInt(monyeDepositValue);
+    const stringMoneyDepositValue = parseFloat(monyeDepositValue); 
     
     monyeDeposit.innerText  = stringInputValueShow ;
     const total = stringMoneyDepositValue + stringInputValueShow;
@@ -20,7 +20,7 @@ document.getElementById('btn-deposit-field').addEventListener('click', function(
     
     const balnaceValue = document.getElementById('balnace');
     const currentBalnaceValue = balnaceValue.innerText;
-    const stringCurrentBalnaceValue = parseInt(currentBalnaceValue);
+    const stringCurrentBalnaceValue = parseFloat (currentBalnaceValue);
     const totalBalnce = stringCurrentBalnaceValue + total;
     balnaceValue.innerText = totalBalnce;
     
