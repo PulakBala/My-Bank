@@ -29,18 +29,35 @@
              <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
                 <div class="bg-green-400 p-8 rounded-xl">
                     <h4 class="text-2xl">Deposit</h4>
-                    <h2 class="text-5xl">$00</h2>
+                    <h2 class="text-5xl">$<span id="money">00</span></h2>
                 </div>
                 <div class="bg-yellow-500 p-8 rounded-xl">
                     <h4 class="text-2xl">Withdraw</h4>
-                    <h2 class="text-5xl">$00</h2>
+                    <h2 class="text-5xl">$<span id="withdraw-money">00</span></h2>
                 </div>
                 <div class="bg-violet-400 p-8 rounded-xl">
                     <h4 class="text-2xl">Balnace</h4>
-                    <h2 class="text-5xl">$00</h2>
+                    <h2 class="text-5xl">$<span id="balnace">1250</span> </h2>
                 </div>
              </div>
          </section>
+         <!-- deposit and withdraw  -->
+         <section class="mt-12">
+                  <div class="grid grid-cols-2  gap-4 w-9/12  mx-auto text-white">
+                      <div class="bg-pink-500	 p-8  rounded-xl">
+                            <h4 id="deposit-field" class="text-2xl mb-4">Please Deposit</h4>
+                            <input class="w-9/12 block mb-2 px-3 text-blue-900" type="text" name="" id="deposit-input-value" placeholder="$ Amount you want to deposit">
+                            <button id="btn-deposit-field" class="bg-amber-600 hover:bg-sky-700 px-8 py-2 text-white font-medium rounded-lg">Deposit</button>
+                      </div>
+                      <div class="bg-red-500 p-8 rounded-xl">
+                          <h4 class="text-2xl mb-4">Please Withdraw</h4>
+                          <input class="w-9/12 block mb-2 px-3 text-blue-900" type="email" name="" id="" placeholder="$ Amount you want to Withdraw">
+                          <button id="btn-withdraw-field" class="bg-amber-600 hover:bg-sky-700 px-8 py-2 text-white font-medium rounded-lg">Withdraw</button>
+                      </div>
+                  </div>
+         </section>
        </main>
+
+       <script src="js/deposit.js"></script>
 </body>
 </html>

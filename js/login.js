@@ -22,4 +22,5 @@ document.getElementById('btn-submit').addEventListener('click', function(){
         alert('write a correct information')
     }
 
-})
+});
+
